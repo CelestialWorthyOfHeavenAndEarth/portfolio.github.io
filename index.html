@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswini Kumar Yanamadala's Portfolio</title>
+    <meta name="description" content="Portfolio of Aswini Kumar Yanamadala, a computer science student.">
+    <meta name="keywords" content="Aswini Kumar Yanamadala, portfolio, computer science, projects">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Include Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hidden-sidebar {
+            transform: translateX(-100%);
+        }
+        .menu-button {
+            transition: transform 0.3s ease-in-out;
+        }
+        .background-animation {
+            animation: moveBg 10s linear infinite;
+        }
+        @keyframes moveBg {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 0; }
+        }
+        .hover-transition {
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-roboto background-animation" style="background-image: linear-gradient(to right, #1a202c, #2d3748, #4a5568, #718096);">
+    <div class="flex min-h-screen">
+        <!-- Side Menu -->
+        <aside id="sidebar" class="w-64 bg-gray-800 text-gray-200 flex-shrink-0 sidebar" aria-label="Sidebar">
+            <nav class="mt-10">
+                <ul>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#about" class="hover-transition">About Me</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#skills" class="hover-transition">Skills</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#projects" class="hover-transition">Projects</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#languages" class="hover-transition">Languages</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#courses" class="hover-transition">Courses and Certifications</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#education" class="hover-transition">Education</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 hover-transition"><a href="#contact" class="hover-transition">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <div class="flex-grow p-6">
+            <button id="menu-button" class="bg-gray-800 text-gray-200 p-2 rounded-md mb-4 menu-button" aria-label="Toggle Menu">☰ Menu</button>
+            <header id="about" class="mb-10">
+                <h1 class="text-4xl font-bold">Aswini Kumar Yanamadala</h1>
+                <p class="mt-2">Highly motivated and results-oriented computer science student with a strong foundation in C++, data structures, and algorithms. Eager to apply academic knowledge to real-world software development challenges. Proven ability to solve complex problems and think critically. Seeking to contribute to innovative projects and gain hands-on experience.</p>
+                <p class="mt-2">Currently in my 2nd year at SRM Institute of Science and Technology, I am dedicated to expanding my knowledge and skills in the field of software engineering. My academic journey has equipped me with a robust understanding of various programming languages and development tools, which I am eager to apply in practical, impactful projects.</p>
+            </header>
+
+            <section id="skills" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+                <ul class="list-disc list-inside">
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Kotlin</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+                <div>
+                    <h3 class="text-2xl font-semibold">CGPA Calculator Application</h3>
+                    <p>Developed a CGPA calculator application in C to efficiently compute the Cumulative Grade Point Average (CGPA) based on user-provided input. The program effectively handles multiple subjects, allowing users to input credits and grade points for each course. It accurately calculates the total credits and grade points, ensuring precise CGPA calculation. The user-friendly interface provides clear prompts and formatted output, making it easy to use for students of all levels.</p>
+                    <p>The application showcases my ability to develop efficient and user-friendly software solutions. It highlights my proficiency in C programming and my understanding of how to handle user input and perform accurate calculations, which are essential skills for any software engineer.</p>
+
+                    <h3 class="text-2xl font-semibold mt-4">Airplane Booking System</h3>
+                    <p>Created a website airplane booking system using Java Swings with MySQL (JDBC). The system allows users to book flights, manage reservations, and view flight details. The backend integration with MySQL ensures reliable data storage and retrieval, making the system robust and scalable.</p>
+                    <p>This project underscores my capability to develop complex web applications and my expertise in Java and SQL. It also demonstrates my ability to integrate front-end and back-end technologies to create comprehensive software solutions.</p>
+                </div>
+            </section>
+
+            <section id="languages" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Languages</h2>
+                <ul class="list-disc list-inside">
+                    <li>English</li>
+                    <li>Telugu</li>
+                    <li>Hindi</li>
+                    <li>Kannada</li>
+                </ul>
+            </section>
+
+            <section id="courses" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Courses and Certifications</h2>
+                <ul class="list-disc list-inside">
+                    <li>CS50X from edX</li>
+                    <li>Introduction to Android Mobile Application Development from Meta</li>
+                    <li>Crash Course on Python from Google</li>
+                    <li>Data Structures and Algorithms from Udemy</li>
+                </ul>
+            </section>
+
+            <section id="education" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Education</h2>
+                <div>
+                    <p>SRM Institute of Science and Technology</p>
+                    <p>Bachelor of Technology in Computer Science, 2nd year</p>
+                </div>
+            </section>
+
+            <!-- Coding Profiles Section -->
+            <section id="coding-profiles" class="mb-10">
+                <h2 class="text-3xl font-semibold mb-4">Coding Profiles</h2>
+                <ul class="list-disc list-inside">
+                    <li><a href="https://github.com/CelestialWorthyOfHeavenAndEarth" target="_blank" class="text-blue-400 hover:text-blue-600">GitHub - CelestialWorthyOfHeavenAndEarth</a></li>
+                    <li><a href="https://leetcode.com/u/Reverend_Insanity/" target="_blank" class="text-blue-400 hover:text-blue-600">LeetCode - Reverend_Insanity</a></li>
+                    <li><a href="https://www.codechef.com/users/bloodprince" target="_blank" class="text-blue-400 hover:text-blue-600">CodeChef - bloodprince</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/RA2311003011159" target="_blank" class="text-blue-400 hover:text-blue-600">HackerRank - RA2311003011159</a></li>
+                </ul>
+            </section>
+
+            <footer id="contact" class="mt-10">
+                <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+                <p class="flex items-center">
+                    <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                    Email: <a href="mailto:aswinikumary@gmail.com" class="text-blue-400">aswinikumary@gmail.com</a>
+                </p>
+                <p class="flex items-center mt-2">
+                    <i class="fab fa-linkedin mr-2 text-blue-400"></i>
+                    LinkedIn: <a href="https://www.linkedin.com/in/aswini-kumar-yanamadala" class="text-blue-400" target="_blank">Aswini Kumar Yanamadala</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden-sidebar');
+        });
+
+        // Add smooth scrolling for sidebar links
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
